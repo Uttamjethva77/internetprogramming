@@ -1,188 +1,148 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Registration Page</title>
-   <!--Made with love by Mutiullah Samim -->
-   
-	<!--Bootsrap 4 CDN-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-    <!--Fontawesome CDN-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <style>
+    body{
+        background-image: url('https://s3.envato.com/files/3cf6c2ba-7a4a-4ef7-9528-1cccde2405c4/inline_image_preview.jpg');
 
-	<!--Custom styles-->
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<style>
-    /* Made with love by Mutiullah Samim*/
-
-@import url('https://fonts.googleapis.com/css?family=Numans');
-
-html,body{
-background-image: url('https://scontent-del1-2.xx.fbcdn.net/v/t39.30808-6/240604448_3070985143176566_2287227970453784839_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=siH98WvjhccAX_MUHIS&_nc_ht=scontent-del1-2.xx&oh=00_AT_Jp7k9LgXRrLv80zYvUpBqKTSCmAphwFiGHwF7i3x50w&oe=61E39DAD');
-background-size: cover;
-background-repeat: no-repeat;
-height: 100%;
-font-family: 'Numans', sans-serif;
+    }
+        .divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
 }
 
-.container{
-height: 100%;
-align-content: center;
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
 }
-
-.card{
-height: 370px;
-margin-top: auto;
-margin-bottom: auto;
-width: 400px;
-background-color: rgba(0,0,0,0.5) !important;
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+}
+.card_bg-light {
+    background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg');
 }
 .uttam {
-    padding-top: 20px;
-    padding-right: 120px;
+    padding-bottom: 25px;
 }
+    </style>
+   </head>
 
-
-.social_icon span{
-font-size: 60px;
-margin-left: 10px;
-color: #FFC312;
-}
-
-.social_icon span:hover{
-color: white;
-cursor: pointer;
-}
-
-.card-header h3{
-color: white;
-}
-
-.social_icon{
-position: absolute;
-right: 20px;
-top: -45px;
-}
-
-.input-group-prepend span{
-width: 50px;
-background-color: #FFC312;
-color: black;
-border:0 !important;
-}
-
-input:focus{
-outline: 0 0 0 0  !important;
-box-shadow: 0 0 0 0 !important;
-
-}
-
-.remember{
-color: white;
-}
-
-.remember input
-{
-width: 20px;
-height: 20px;
-margin-left: 15px;
-margin-right: 5px;
-}
-
-.login_btn{
-color: black;
-background-color: #FFC312;
-width: 100px;
-}
-
-.login_btn:hover{
-color: black;
-background-color: white;
-}
-
-.links{
-color: white;
-}
-
-.links a{
-margin-left: 4px;
-}
-</style>
 <body>
-<div class="container">
-	<div class="d-flex justify-content-center h-100">
-		<div class="card">
-			<div class="card-header">
-				<h3>Register Here</h3>
-			</div>
-			<div class="card-body">
-				<form>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-user"></i></span>
-						</div>
-						<input type="text" class="form-control" placeholder="Username">
-						
-					</div>
-					<div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fas fa-key"></i></span>
-						</div>
-						<input type="password" class="form-control" placeholder="Password">
-					</div>
-                    <div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
-						</div>
-						<input type="email" class="form-control" placeholder="Email">
-					</div>
-                    <div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fa fa-mobile-phone"></i></span>
-						</div>
-						<input type="number" class="form-control" placeholder="Mobile number">
-					</div>
-                    <div class="input-group form-group">
-						<div class="input-group-prepend">
-							<span class="input-group-text"><i class="fa fa-home"></i></span>
-						</div>
-						<label class="form-control" for="cars">Select City:</label>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-                        <select id="cars">
-                            <option value="volvo">Rajkot</option>
-                            <option value="saab">Ahemdabad</option>
-                            <option value="opel">Baroda</option>
-                            <option value="audi">Surat</option>
-                            <option value="volvo">Morbi</option>
-                            <option value="saab">Junagadh</option>
-                            <option value="opel">Jetpur</option>
-                            <option value="audi">Gondal</option>
-                        </select>
-                     
-					</div>
-                    <div class="input-group form-group">
-						
-							
-						
-					<div class="uttam">
-					
-						<input type="submit" value="Register" class="btn login_btn">
-                    
-                    </div>
-                    </div>
-                    
-				</form>
-			</div>
-			
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+<div class="container">
+<div class="card_bg-light">
+<article class="card-body mx-auto" style="max-width: 400px;">
+	<h4 class="card-title mt-3 text-center">Registration page</h4>
+	<form>
+	<div class="form-group input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+        <input name="" class="form-control" placeholder="Full name" type="text">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+		 </div>
+        <input name="" class="form-control" placeholder="Email address" type="email">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+        <input name="" class="form-control" placeholder="Enter your age" type="text">
+    </div>
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+        <input name="" class="form-control" placeholder="Enter your Birthdate" type="date">
+    </div>
+     <!-- form-group// -->
+     <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-building"></i> </span>
 		</div>
+		<select class="form-control">
+			<option selected=""> Country</option>
+			<option>India</option>
+			<option>South Africa</option>
+			<option>America</option>
+		</select>
 	</div>
-</div>
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+		</div>
+		<select class="form-control">
+			<option selected=""> City</option>
+			<option>Rajkot</option>
+			<option>Junagadh</option>
+			<option>Dwarka</option>
+		</select>
+	</div>
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		 <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+        <input name="Upload Your profile picture" class="form-control" placeholder="Upload Your profile picture" type="file">
+    </div>
+    	<div class="form-group input-group">
+		<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+		 </div>
+        <input name="" class="form-control" placeholder="Note" type="text">
+    </div>
+     <!-- form-group end.// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input class="form-control" placeholder="Create password" type="password">
+    </div> <!-- form-group// -->
+    <div class="form-group input-group">
+    	<div class="input-group-prepend">
+		    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+		</div>
+        <input class="form-control" placeholder="Repeat password" type="password">
+    </div> <!-- form-group// -->                                      
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
+    </div> <!-- form-group// -->      
+    <p class="text-center">Have an account? <a href="http://21soece13029.epizy.com/">Log In</a> </p>                                                                 
+</form>
+</article>
+</div> <!-- card.// -->
+
+</div> 
+<!--container end.//-->
 </body>
 </html>
